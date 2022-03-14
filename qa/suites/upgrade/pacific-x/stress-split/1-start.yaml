@@ -1,12 +1,12 @@
 tasks:
 - install:
-    branch: pacific
+    branch: quincy
     exclude_packages:
       - ceph-volume
 
 - cephadm:
-    image: docker.io/ceph/daemon-base:latest-pacific
-    cephadm_branch: pacific
+    image: docker.io/ceph/daemon-base:latest-quincy
+    cephadm_branch: quincy
     cephadm_git_url: https://github.com/ceph/ceph
     conf:
       osd:
